@@ -72,42 +72,69 @@ Yogyakarta, 2025
 
 Bambang Purnomosidi D. P.
 
-= Part I: Title of Part I
+= Bagian I: Pendahuluan
 
 [partintro]
 --
-Describe part I of the book briefly here.
+Bagian ini membahas tentang hal-hal yang bersifat mendasar dan merupakan latar belakang serta kondisi ekosistem Java sebagai suatu bahasa pemrograman. Bagian ini diperlukan untuk memberikan wawasan terhadap bahasa pemrograman Java dalam konteks pengembangan peranti lunak. Dengan mempelajari bagian ini, pembaca akan mempunyai wawasan yang cukup tentang dunia pengembangan peranti lunak serta keterkaitannya dengan Java modern.
 --
 
 include::{includedir}/01-01-title.adoc[]
 
 include::{includedir}/01-02-title.adoc[]
 
-= Part II: Title of Part II
+= Bagian II: Bahasa Pemrograman Java
 
 [partintro]
 --
-Describe part II of the book briefly here.
+Bagian ini membahas tentang pengetahuan pemrograman menggunakan Java. Bab-bab pada bagian ini membahas tentang sintaksis dari bahasa pemrograman Java. Dengan memahami bagian ini, diharapkan pembaca bisa membuat program / kode sumber Java secara efektif.
 --
 
 include::{includedir}/02-01-title.adoc[]
 
 include::{includedir}/02-02-title.adoc[]
 
+= Bagian III: Paradigma Pemrograman di Java
+--
+Paradigma dalam bahasa pemrograman merupakan cara pandang untuk menghasilka solusi terhadap berbagai masalah pemrograman. Saat ini, bisa dikatakan bahwa Java modern merupakan bahasa pemrograman yang mendukung berbagai paradigma. Bagian ini terutama digunakan untuk membentuk pola pikir sesuai paradigma pemrograman yang dibahas serta implementasinya menggunakan Java modern. Bagian ini tidak membahas secara khusus tentang PBO (Pemrograman Berorientasi Obyek) karena PBO merupakan paradigma default dari Java dan telah dibahas di bagian II.
+--
+
+include::{includedir}/03-01-title.adoc[]
+
+include::{includedir}/03-02-title.adoc[]
+
+= Bagian IV: API di Java
+--
+Bagian ini membahas tentang berbagai API (_Application Programming Interface_)standar di Java. Java mempunyai beberapa API standar yang menyediakan berbagai fungsionalitas tertentu. Dengan memahami bagian ini, diharapkan pembaca mengetahui berbagai API standar di Java dan bisa menggunakannya dalam kode sumber Java modern secara efektif.
+--
+
+include::{includedir}/04-01-title.adoc[]
+
+include::{includedir}/04-02-title.adoc[]
+
+= Bagian V: Konsep Tingkat Lanjut di Rekayasa Peranti Lunak dan Java Modern
+--
+Bagian ini membahas berbagai konsep tingkat lanjut di Java modern. Konsep tingkat lanjut ini diperlukan terutama terkait dengan proses pengembangan dan _deployment_ pada berbagai platform dan lingkungan komputasi modern. Dengan memahami bagian ini, diharapkan pembaca bisa menerapkan berbagai materi yang telah dibahas untuk pengembangan peranti lunak menggunakan Java modern secara utuh.
+--
+
+include::{includedir}/05-01-title.adoc[]
+
+include::{includedir}/05-02-title.adoc[]
+
 [bibliography]
-include::{includedir}/additional-00-bibliography.adoc[]
+include::{includedir}/tambahan-00-bibliography.adoc[]
 
 [appendix]
-include::{includedir}/additional-01-appendix.adoc[]
+include::{includedir}/tambahan-01-appendix.adoc[]
 
 [appendix]
-include::{includedir}/additional-02-appendix.adoc[]
+include::{includedir}/tambahan-02-appendix.adoc[]
 
 [glossary]
-= Glossary
+= Ringkasan
 
 [glossary]
-include::{includedir}/additional-03-glossary.adoc[]
+include::{includedir}/tambahan-03-glossary.adoc[]
 
 [index]
-== Index
+== Indeks
