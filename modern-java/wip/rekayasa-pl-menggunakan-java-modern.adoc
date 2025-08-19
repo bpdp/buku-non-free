@@ -1,0 +1,113 @@
+= Rekayasa Peranti Lunak Menggunakan Java Modern 
+Dr. Bambang Purnomosidi D. P. <bambangpdp@gmail.com>
+v0.0.1-rev-{localdatetime}
+:doctype: book
+:toc:
+:toc-title: Daftar Isi
+:table-caption: Tabel
+:source-highlighter: rouge
+// style:
+// https://github.com/rouge-ruby/rouge/tree/HEAD/lib/rouge/themes
+:rouge-style: igor_pro
+:sectnums:
+:description: Buku ini membahas tentang pengembangan peranti lunak dengan menggunakan Java modern. \
+              Pembahasan meliputi berbagai sisi dari disiplin ilmu Rekayasa Peranti Lunak dan bagaimana \
+              Java sebagai peranti pengembangan bisa digunakan sesuai dengan teori-teori tersebut. \
+              Pengembangan diutamakan diimplementasikan untuk peranti JDK modern serta lingkungan \
+              pengembangan dan _deployment_ modern.
+:sourcedir: src
+:includedir: isi
+:imagesdir: gambar/isi-buku
+// below is used to save generated image from asciidoctor-diagram
+:imagesoutdir: gambar/cache
+:chapter-signifier: Bab
+:figure-caption: Gambar
+:icons: font
+// default: Appendix, this one is used to change into "Supplement"
+:appendix-caption: Lampiran
+////
+Use this if you create a full cover in one page
+:front-cover-image: image::./images/title_page.png[]
+////
+//:title-logo-image: images/logo-zimera.png
+
+:listing-caption: Kode Sumber 
+
+:sectnums!:
+== List of figures
+list-of::image[]
+<<<
+
+== List of tables
+list-of::table[]
+<<<
+
+== List of code snippets
+list-of::listing[]
+<<<
+:sectnums:
+
+[preface]
+= Kata Pengantar
+
+Buku ini ditulis bagi pembaca yang ingin mendalami bahasa pemrograman Java dengan _kompilator_ / _compiler_ yang tersedia bebas dalam konteks perekayasaan peranti lunak. Buku ini unik dalam hal kelengkapan dan kedalaman pembahasan serta keterkaitannya dengan rekayasa peranti lunak. Lebih khusus lagi, buku ini membahas tentang platform pengembangan serta _deployement_ terkini dengan menggunakan JDK modern. 
+
+Selama ini, banyak orang yang mengasosiasikan Java dengan _bloated_ / memerlukan sumber daya / _resources_ yang berlebihan. Selain itu, kompleksitas Java dalam pembuatan kode sumber maupun ekosistem juga merupakan sisi lain dari Java. Buku ini berusaha untuk menjadi solusi terhadap hal-hal tesebut. Setelah membaca buku ini, pembaca akan mendapatkan gambaran umum tentang dunia rekayasa peranti lunak menggunakan Java modern pada lingkungan pengembangan dan _deployment_ yang modern. Buku ini juga menyiapkan para pembaca untuk berkarir dalam dunia industri peranti lunak sebagai pengembang peranti lunak. Dengan membaca buku ini, pembaca tidak hanya akan memahami Java, tetapi juga akan mendapatkan pengetahuan berikut:
+
+1. Memahami berbagai pola pikir dalam pengembangan peranti lunak / kode sumber (obyek, imperatif, fungsional, dan lain-lain)
+2. Memahami berbagai terminologi serta berbagai isu sentral rekayasa peranti lunak yang melingkupi Java
+3. Memahami cara membuat dan mengoptimalkan program menggunakan Java
+4. Memahami berbagai cabang yang bisa didalami di industri peranti lunak.
+
+Buku ini tentu saja tidak akan terwujud tanpa peran serta dari berbagai pihak. Untuk itu, penulis mengucapkan terima kasih mendalam kepada:
+
+1. Keluarga penulis
+2. Rekan-rekan di Yayasan Jamali
+3. Rekan-rekan dosen maupun tendik di Universitas Teknologi Digital Indonesia
+
+Akhir kata, buku ini tentu saja masih jauh dari kekurangan. Saran dan masukan bisa disampaikan ke penulis secara langsung di bambangpdp@gmail.com. Selamat membaca, berlatih, dan terima kasih!
+
+
+Yogyakarta, 2025
+
+Bambang Purnomosidi D. P.
+
+= Part I: Title of Part I
+
+[partintro]
+--
+Describe part I of the book briefly here.
+--
+
+include::{includedir}/01-01-title.adoc[]
+
+include::{includedir}/01-02-title.adoc[]
+
+= Part II: Title of Part II
+
+[partintro]
+--
+Describe part II of the book briefly here.
+--
+
+include::{includedir}/02-01-title.adoc[]
+
+include::{includedir}/02-02-title.adoc[]
+
+[bibliography]
+include::{includedir}/additional-00-bibliography.adoc[]
+
+[appendix]
+include::{includedir}/additional-01-appendix.adoc[]
+
+[appendix]
+include::{includedir}/additional-02-appendix.adoc[]
+
+[glossary]
+= Glossary
+
+[glossary]
+include::{includedir}/additional-03-glossary.adoc[]
+
+[index]
+== Index

@@ -1,0 +1,292 @@
+Rekayasa Peranti Lunak dengan Java
+Bambang Purnomosidi D. P. (me@bpdp.name / bambangpdp@{yahoo.com|gmail.com} - 2010)
+
+Buku ini ditulis bagi pembaca yang ingin mendalami bahasa pemrograman Java dengan berbagai kompiler/interpreter yang tersedia bebas dalam
+konteks perekayasaan peranti lunak. Buku ini unik dalam hal kelengkapan dan kedalaman pembahasan serta keterkaitannya dengan rekayasa peranti 
+lunak. Setelah membaca buku ini, pembaca akan mendapatkan gambaran umum tentang dunia rekayasa peranti lunak menggunakan Java serta materi yang 
+mendalam tentang pemrograman Java. Buku ini juga menyiapkan para pembaca untuk berkarir dalam dunia industri peranti lunak sebagai pengembang 
+peranti lunak. Dengan membaca buku ini, pembaca akan memahami pola pikir obyek yang diperlukan dalam mengembangkan peranti lunak menggunakan Java,
+memahami berbagai terminologi serta berbagai isu sentral rekayasa peranti lunak yang melingkupi Java, memahami cara membuat dan mengoptimalkan 
+program menggunakan Java, serta memahami berbagai cabang yang bisa didalami di industri peranti lunak.
+
+Bab x Bahasa Pemrograman dan Java
+    - Fungsi Bahasa Pemrograman
+    - Bahasa Pemrograman, Interpreter dan Kompiler
+    - Kategori Bahasa Pemrograman
+      - Bahasa Mesin
+      - Bahasa Aras Rendah (Assembly)
+      - Bahasa Tingkat Menengah
+      - Bahasa Tingkat Tinggi
+    - Paradigma Pemrograman
+      - Pemrograman Prosedural
+      - Pemrograman Berorientasi Obyek
+      - Pemrograman Fungsional
+      -	Beberapa Pandangan Lain dalam Paradigma Pemrograman
+	-	Pemrograman Imperatif
+	-	Pemrograman Deklaratif
+	-	Pemrograman Event-Driven
+    - Posisi Java dalam Dunia Pemrograman
+
+Bab x Java dan Pola Pikir Obyek
+    -	Java Sebagai Bahasa Pemrograman Berorientasi Obyek
+    -	Algoritma Pemrograman dan PBO
+    -	Pemrograman dan Pola Pikir Penyelesaian Masalah
+	-	Pola Pikir Prosedural
+	-	Pola Pikir Obyek
+
+Bab x Rekayasa Peranti Lunak dan Java
+    - Pengertian Rekayasa Peranti Lunak
+    - Metodologi Rekayasa Peranti Lunak
+      - Proses
+      - Pemodelan
+    - Berbagai Pendekatan dalam Metodologi Rekayasa Peranti Lunak
+      - Pendekatan Waterfall
+      -	Pendekatan Prototyping
+      -	Pendekatan Spiral
+      -	Pendekatan RAD (Rapid Application Development)
+      -	Pendekatan Iteratif dan Agile
+    - Metodologi, UML, dan Java
+    - Posisi Peranti Pengembangan dalam Pekerjaan Pengembangan Peranti Lunak
+    - Posisi Pemrogram dalam Pekerjaan Pengembangan Peranti Lunak
+
+Bab x Java dan Standar
+    -	Pengertian JCP
+    -	Keanggotaan JCP
+    -	JSR (Java Specification Request), RI (Reference Implementation), dan TCK (Technology Compatibility Kit)
+    -	Proses Penetapan Standar
+    -	Beberapa Contoh JSR
+
+Bab x Peranti Pengembangan Java
+    - Java, JRE, JDK, JSE, JME, JEE, Java Card, JavaFX, dan Java Embedded
+    - Berbagai Versi Kompiler Java
+    - Instalasi Oracle JDK dan OpenJDK
+    - Proses Kompilasi Kode Sumber Java
+    - Tipe File
+        - File kode sumber: .java
+        - File hasil kompilasi: .class
+        - File JAR
+        - File WAR
+        - File EAR
+	- File JAD
+	- Tipe File Lain
+
+Bab x Dasar-dasar Pemrograman Java
+    - Penulisan Kode Sumber
+    - Kompilasi dan Menjalankan Program
+    - Keyword / Kata Kunci
+    - Argument dan Penanganannya
+    - Variabel
+      - Variabel dan Literal
+      - Variabel dan Property / Atribut
+      - Penamaan Variabel
+      - Tipe Data Primitif Variabel
+      -	Tipe enum
+      - Ruang Lingkup Variabel
+    - Operator dan Ekspresi
+    - Statement / Pernyataan
+    - Blok Program
+    - Komentar Program
+    - Pernyataan Pengendali Alur
+      - Pernyataan if
+      - Pernyataan switch
+    - Pernyataan Perulangan
+      - Pernyataan for
+      - Pernyataan while dan do
+      - Pernyataan break dan continue
+      - Label dan pemrograman yang baik
+
+Bab x Array
+    - Pengertian dan Manfaat Array
+    - Deklarasi Array
+    - Membuat Obyek Array
+    - Mengakses Elemen Array
+    - Array Multidimensi
+
+Bab x Kelas dan Obyek / Instance
+    - Pengertian Kelas
+    - Pengertian Obyek / Instance
+    - Mendefinisikan Kelas
+      - Atribut / Properties
+      - Methods
+      -	Return Value
+      -	Kata Kunci this
+      - Konstruktor Sebagai Method untuk Inisialisasi Obyek
+      - Method Finalizer Sebagai Method Destruktor
+    - Access Modifier
+    - Mendefinisikan Obyek
+    - Nested Class
+      -	Pengertian Nested Class
+      -	Kategori Nested Class
+	-	Static Nested Class
+	-	Inner Class
+
+Bab x Annotations
+    -	Pengertian Annotations
+    -	Annotations untuk Dokumentasi
+    -	Annotations untuk Keperluan Kompilasi
+    -	Pemrosesan Annotations
+
+Bab x Interface
+    -	Pengertian Interface
+    -	Definisi Interface
+    -	Interface dan Implementasi
+
+Bab x Packages
+    -	Pengertian Packages
+    -	Mengapa Memerlukan Packages?
+    -	Penamaan Packages
+    -	Membuat Packages
+    -	Pengelolaan Kode Sumber dan Hasil Kompilasi yang Menggunakan Packages
+    -	Menggunakan Packages
+    -	Meng-import Packages
+    -	Static Import
+
+Bab x Angka dan String di Java
+    -	Kelas untuk Angka di Java
+    -	Kelas untuk Pengolahan String di Java
+
+Bab x Generics
+    -	Pengertian Generics
+    -	Manfaat Generics
+    -	Parameter Tipe
+    -	Konvensi Penamaan Parameter Tipe
+    -	Pembatasan Parameter Tipe
+    -	Subtype
+    -	Wildcards
+    -	Penghapusan Tipe
+
+Bab x Exception dan Penanganannya
+    -	Pengertian Exception
+    -	try ... catch ... finally
+    -	Pernyataan throw dan Kelas Throwable
+    -	Berbagai Exceptions di Java
+
+Bab x Inheritance / Pewarisan
+    -	Pengertian Pewarisan
+    -	Hirarki Kelas
+    -	Pewarisan di Java
+    -	Method Overriding
+    -	Multiple Inheritance dan Interface
+
+Bab x Polymorphism
+    - Pengertian Polymorphism
+    - Mengapa Perlu Polymorphism?
+    - Implementasi Polymorhpism
+      - Operator Overloading
+    - Method Overloading
+
+Bab x Java API
+    - Pengertian API
+    - API yang Disediakan JDK
+    - Membaca Dokumentasi API Java
+
+Bab x Struktur Data
+    - Interface
+      - Iterator
+      - Map
+    - Class
+      - BitSet
+      - Vector
+      - Stack
+      - HashTable
+
+Bab x Collections
+
+Bab x Java dan Regular Expressions
+
+Bab x Concurrent Programming di Java
+    -	Pengertian Concurrent Programming
+    -	Concurrent Programming: Process
+    -	Concurrent Programming: Thread
+
+Bab x Java untuk Pemrograman XML
+
+Bab x Java dan Basis Data
+    - JavaDB
+    - JDBC
+
+Bab x Java untuk Pemrograman Komponen Menggunakan JavaBeans
+
+
+Bab x Java dan Internasionalisasi Aplikasi
+
+Bab x Java untuk Pemrograman Suara dan Grafik 2 Dimensi
+
+Bab x Java untuk Pemrograman Jaringan
+
+Bab x Java I/O dan Serialisasi Obyek
+
+Bab x Java untuk Komputasi Terdistribusi
+    -	RMI (Remote Method Invocation)
+    -	RMI/IIOP / CORBA
+
+Bab x Java untuk Aplikasi Web
+    -	Applet
+    -	Servlet dan JSP
+
+Bab x Java untuk Aplikasi Desktop / GUI
+    -	AWT dan Swing
+    -	Java 2D
+
+Bab x JavaFX untuk Rich Internet Application
+
+Bab x Tools Pemrograman Java
+    - Javadoc untuk Dokumentasi
+    - Apache Ant untuk Peranti Build
+    - Apache Maven untuk Pengelolaan Proyek
+    - IDE (Integrated Development Environment)
+      - NetBeans
+      - Eclipse
+      - Oracle JDeveloper
+      - IntelliJIDEA
+      - Peranti Lain
+
+Bab x Java dan Berbagai Topik Rekayasa Peranti Lunak
+    - Design Patterns
+    - Separation of Concerns
+    - MVC (Model-View-Controller)
+    - Dependency Injection
+    - Unit Testing
+    - TDD (Test-Driven Development)
+    - BDD (Behaviour-Driven Development)
+    - ORM (Object-Relational Mapping)
+    - AOP (Aspect-Oriented Programming)
+
+Bab x Java dan Framework
+    - Pengertian Framework
+    - Mengapa Perlu Framework?
+    - Berbagai Tipe Framework
+    - Famework di Java
+      - Framework Web
+      - Framework Aplikasi Enterprise
+      - Framework GUI
+      -	Framework Aplikasi Handset
+
+Bab x	Bahasa Pemrograman untuk Java Virtual Machine
+    -	Pengantar
+    -	Interpreter/Compiler Bahasa Pemrograman Lain
+	-	JRuby (Bahasa Pemrograman Ruby)
+	-	Jython (Bahasa Pemrograman Python)
+	-	Rhino (Engine JavaScript)
+	-	Jaskell (Haskell)
+	-	OCaml-Java (Ocaml)
+	-	Kahlua dan Jill (Lua)
+	-	ABCL (Armed Bear Common Lisp - Common Lisp)
+	-	Jawk (AWK)
+	-	Rcl/Java
+    -	Bahasa Pemrograman Baru
+	-	Groovy
+	-	Scala
+	-	Clojure
+	-	BeanShell
+	-	AspectJ
+        -	Mirah
+	-	Fantom
+	-	E Programming Language
+	-	Ioke
+	-	NetLogo
+	-	Nice
+	-	Noop
+	-	CAL / OpenQuark
+	-	Hecl
+	-	Alef++
