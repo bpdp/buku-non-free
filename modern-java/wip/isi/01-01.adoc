@@ -64,10 +64,10 @@ Pada dasarnya pemrogram menggunakan bahasa pemrograman untuk menuliskan sintaksi
 
 ==== Bahasa Mesin 
 
-Instruksi bahasa mesin adalah satu-satunya instruksi yang dipahami oleh komputer. Instruksi ini merupakan suatu pola bit yang hanya terdiri atas angka 0 dan 1 (binary digit). Setiap perintah mempunyai suatu pola tersendiri. Bagian dari bahasa mesin yang menyebutkan operasi yang harus dilaksanakan disebut sebagai opcode (operation code). Bahasa ini berbeda-beda untuk setiap prosesor, sehingga untuk mendalami bahasa ini, berarti harus mendalami tipe prosesor tertentu dan tidak bisa diaplikasikan ke tipe prosesor lain. <<#img-ch01-01>> berikut ini adalah contoh bahasa mesin untuk melompat ke alamat memory 1024.footnote:[https://en.wikipedia.org/wiki/Machine_code]
+Instruksi bahasa mesin adalah satu-satunya instruksi yang dipahami oleh komputer. Instruksi ini merupakan suatu pola bit yang hanya terdiri atas angka 0 dan 1 (binary digit). Setiap perintah mempunyai suatu pola tersendiri. Bagian dari bahasa mesin yang menyebutkan operasi yang harus dilaksanakan disebut sebagai opcode (operation code). Bahasa ini berbeda-beda untuk setiap prosesor, sehingga untuk mendalami bahasa ini, berarti harus mendalami tipe prosesor tertentu dan tidak bisa diaplikasikan ke tipe prosesor lain. Gambar tentang <<#img-ch01-01>> berikut ini adalah contoh bahasa mesin untuk melompat ke alamat memory 1024.footnote:[https://en.wikipedia.org/wiki/Machine_code]
 
 [#img-ch01-01]
-.Contoh bahasa mesin
+.contoh bahasa mesin
 [link=https://en.wikipedia.org/wiki/Machine_code]
 image::01-01/01.png[]
 
@@ -75,22 +75,22 @@ image::01-01/01.png[]
 
 Bahasa assembly merupakan penyederhanaan dari bahasa mesin dengan cara mengubah pola bit angka 0 dan 1 tersebut menjadi suatu kode yang bisa dibaca. Kode tersebut dikenal dengan istilah mnemonic. Suatu peranti lunak yang digunakan untuk mengubah instruksi bahasa assembly (mnemonic) ke dalam opcode serta mengatur alokasi memory dari nama-nama simbolis dan entitas lainnya adalah assembler. Untuk mengubah ke bentuk yang siap dijalankan oleh mesin, biasanya dibutuhkan linker. Bahasa ini juga sangat tergantung pada mesin dan platform sistem operasi. Di Linux, bisa digunakan Nasm, GNU As sebagai assembler dan GNU ld sebagai linker. Di Windows, bisa digunakan TASM dan MASM untuk keperluan ini. Berikut adalah contoh dari bahasa assembly:
 
-[source,assembly]
+[source,nasm]
 ----
 …
 …
-MOV AL, 61h
+mov al, 61h
 …
 …
 ----
 
-Instruksi di atas digunakan untuk mengisi register AL dengan nilai hexadecimal 61. Jika diterjemahkan ke bahasa mesin, mnemonic MOV di atas akan menjadi “B0 61” dalam hexadecimal atau 10110000 01100001 dalam biner atau bahasa mesin.
+Instruksi di atas digunakan untuk mengisi register **al** dengan nilai hexadecimal 61. Jika diterjemahkan ke bahasa mesin, mnemonic MOV di atas akan menjadi “B0 61” dalam hexadecimal atau 10110000 01100001 dalam biner atau bahasa mesin.
 
 Untuk bisa memprogram dalam bahasa mesin dan assembly, pemrogram perlu membaca manual prosesor yang bersangkutan. Sebagai contoh, jika menggunakan prosesor dari Intel, instruksi-instruksi di atas bisa diperoleh di website dari Intel di URL http://www.intel.com/products/processor/manuals/.
 
 ==== Bahasa Tingkat Menengah
 
-Bahasa tingkat menengah (middle level language) adalah bahasa yang memungkinkan untuk membuat aplikasi di level pemakai maupun untuk melakukan pemrograman yang mengakses sistem dan sumber daya komputer melalui perantara sistem operasi. Bahasa ini memang dikatakan bahasa tingkat menengah karena mempunyai kemampuan baik untuk mengakses sistem secara langsung (biasanya melalui inline assembly atau langsung menuliskan mnemonic di kode sumber) dan di sisi lainnya bahasa ini mempunyai tingkat kemudahan yang mendekati bahasa tingkat tinggi (menggunakan istilah bahasa manusia dalam pemberian perint ahnya). Bahasa C adalah bahasa yang masuk dalam kategori ini. Berikut ini adalah contoh dari Bahasa C menggunakan kompiler GCC yang menyertakan bahasa assembly4.footnote:[Diambil dari https://stackoverflow.com/questions/31688987/why-is-this-simple-c-program-with-gcc-clang-inline-assembly-exhibiting-undefin]
+Bahasa tingkat menengah (middle level language) adalah bahasa yang memungkinkan untuk membuat aplikasi di level pemakai maupun untuk melakukan pemrograman yang mengakses sistem dan sumber daya komputer melalui perantara sistem operasi. Bahasa ini memang dikatakan bahasa tingkat menengah karena mempunyai kemampuan baik untuk mengakses sistem secara langsung (biasanya melalui inline assembly atau langsung menuliskan mnemonic di kode sumber) dan di sisi lainnya bahasa ini mempunyai tingkat kemudahan yang mendekati bahasa tingkat tinggi (menggunakan istilah bahasa manusia dalam pemberian perintahnya). Bahasa C adalah bahasa yang masuk dalam kategori ini. Berikut ini adalah contoh dari Bahasa C menggunakan kompiler GCC yang menyertakan bahasa assembly.footnote:[Diambil dari https://stackoverflow.com/questions/31688987/why-is-this-simple-c-program-with-gcc-clang-inline-assembly-exhibiting-undefin]
 
 [source,c]
 ----
@@ -167,7 +167,7 @@ Perlu diketahui bahwa pembagian menjadi beberapa paradigma ini merupakan pembagi
 
 1. Pemrograman Imperatif. Sering kali dianggap sama dengan pemrograman prosedural, meskipun demikian, ada juga yang menyatakan lain. Perbedaan dengan pemrograman prosedural terutama terletak pada penggunaan prosedur (atau sub program atau subroutines atau functions) yang banyak untuk memperbaiki keterbacaan (readability) dan kemudahan pemeliharaan program (maintainability). Model yang lebih tegas lagi dengan menggunakan aturan peng gunaan variabel lokal di level prosedur sebenarnya juga merupakan bagian dari pemrograman imperatif tetapi lebih sering dimasukkan dalam pemrograman terstruktur (structured programming). Beberapa bahasa pemrograman yang mendukung paradigma ini sama dengan bahasa pemrograman yang mendukung paradigma pemrograman prosedural hanya teknik pemrogramannya yang berbeda.
 2. Pemrograman Deklaratif. Berbeda dengan pemrograman imperatif yang secara eksplisit cenderung untuk menetapkan algoritma untuk menyelesaikan suatu masalah pemrograman, pemrograman deklaratif cenderung untuk mengekspresikan logika komputasi tanpa mendefinisikan alur kendali program. Pemrograman logika menggunakan Prolog merupakan salah satu contoh paradigma pemrograman deklaratif. Paradigma pemrogaman ini cenderung lebih sesuai dipelajari jika ranah aplikasi yang dibangun melibatkan matematika logika. Contoh dari bahasa pemrograman yang mempunyai paradigma utama pemrograman deklaratif antara lain adalah Prolog.
-3. Pemrograman Event-Driven. Pemrograman event-driven adalah suatu paradigma pemrograman yang mengatur aliran program melalui berbagai event / kejadian. Paradigma ini kadang kala juga disebut dengan paradigma pemrograman visual. Pemrogram biasanya membuat form dan meletakkan berbagai komponen (menu, pushbutton, radio button, text area, dan lain-lain) ke dalam form tersebut kemudian mengisikan rangkaian perintah yang dijalankan jika terdapat kejadian yang berkaitan dengan komponen-komponen tersebut (misalnya menu dipilih, push button di klik, form di tutup, dan lain-lain). Contoh peranti pengembangan yang masuk dalam kategori ini antara lain adalah Borland Delphi (dengan bahasa Pascal), QT Designer (dengan bahasa C++), Swing di NetBeans (dengan bahasa Java), dan lain-lain.
+3. Pemrograman Event-Driven. Pemrograman event-driven adalah suatu paradigma pemrograman yang mengatur aliran program melalui berbagai event / kejadian. Paradigma ini kadang kala juga disebut dengan paradigma pemrograman visual. Pemrogram biasanya membuat form dan meletakkan berbagai komponen (menu, pushbutton, radio button, text area, dan lain-lain) ke dalam form tersebut kemudian mengisikan rangkaian perintah yang dijalankan jika terdapat kejadian yang berkaitan dengan komponen-komponen tersebut (misalnya menu dipilih, push button di klik, form di tutup, dan lain-lain). Contoh peranti pengembangan yang masuk dalam kategori ini antara lain adalah Borland Delphi (dengan bahasa Pascal), QT Designer (dengan bahasa C++), Swing di Apache NetBeans (dengan bahasa Java), dan lain-lain.
 
 ==== Kondisi Saat Ini
 
@@ -180,10 +180,11 @@ Pada dasarnya, saat ini jarang ada peranti pengembangan yang hanya menggunakan s
 
 Java sebenarnya bisa dimasukkan dalam kategori bahasa pemrograman tingkat tinggi dan secara umum termasuk dalam kelompok paradigma pemrograman berorientasi obyek. Peranti pengembangan Java merupakan bagian dari peranti pengembangan yang digunakan untuk membangun berbagai aplikasi maupun berbagai kategori peranti lunak lain (misalnya sistem operasi dengan Jnode). Dengan demikian, jika tujuan anda adalah membangun aplikasi, maka peranti pengembangan Java ini akan menjadi wilayah pekerjaan anda. 
 
-Perlu diketahui, di Internet terdapat beberapa situs web yang memang dibangun untuk mengetahui posisi berbagai peranti pengembangan di dunia. Salah satu dari situs web tersebut antara lain adalah indeks menurut Tiobe. Tiobe bisa diakses melalu URL https://www.tiobe.com/tiobe-index/. <<img-ch01-02>> berikut ini adalah posisi bulan Agustus 2025.
+Perlu diketahui, di Internet terdapat beberapa situs web yang memang dibangun untuk mengetahui posisi berbagai peranti pengembangan di dunia. Salah satu dari situs web tersebut antara lain adalah indeks menurut TIOBE. TIOBE bisa diakses melalu URL https://www.tiobe.com/tiobe-index/. Gambar posisi masing-masing bahasa pemrograman bisa dilihat pada <<img-ch01-02>>.
 
 [#img-ch01-02]
 .TIOBE index bulan Agustus 2025
 [link=https://www.tiobe.com/tiobe-index/]
 image::01-01/02.png[]
 
+'''
